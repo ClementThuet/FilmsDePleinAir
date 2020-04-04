@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Les films de plein air</title>
+        <meta name="robots" content="index,follow">
+        <meta charset="UTF-8">
+        <link rel="icon" href="Ressources/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Le festival les films de plein air vous convie à sa première édition du 5 au 8 août 2019 au parc Monceau à Paris pour la projection de nombreux films d'auteurs.">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" >
+                <div class="col-lg-12 d-flex justify-content-center bg-logo">
+                    <img class="logo " src="Ressources/logo.png" alt="Logo les films de plein air">
+                </div>
+            </div>
+            <div class="col-lg-12 d-inline-flex  align-self-start flex-wrap container-menu-mobile">
+                <!--  Menu small devices -->
+                <nav  class="navbar navbar-light white hamburgerMenu">
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarMobile"
+                    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarMobile"  >
+                        <ul class="navbar-nav navbarMenu d-flex flex-row flex-wrap justify-content-around align-items-center">
+                            <li class="nav-item nav-horizontal " >
+                                <a class="nav-link " href="#presentation">Présentation <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item nav-horizontal" >
+                                <a class="nav-link" href="#actualites">Actualités</a>
+                            </li>
+                            <li class="nav-item nav-horizontal" >
+                                <a class="nav-link" href="#programmation">Programmation</a>
+                            </li>
+                            <li class="nav-item nav-horizontal">
+                                <a class="nav-link" href="#preinscription">Préinscriptions</a>
+                            </li>
+                            <li class="nav-item nav-horizontal ">
+                                <a class="nav-link" href="#infopratiques">Informations pratique</a>
+                            </li>
+                            <li class="nav-item nav-horizontal ">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Présentation festival -->
+            <div class="row ">
+                <div class="col-lg-10 page-section  d-inline-flex" id="presentation"> 
+                    <div class="row  ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 ">
+                            <h1 class="titre1 col-lg-10 offset-lg-2" >Bienvenue au festival de plein air !</h1>
+                            <p class="pPresentation "> 
+                                Nous vous accueillons du <b>5 au 8 août 2019</b> pour la première édition de notre festival des films de plein air. Le principe est simple : tous les soirs, de <b>18h à minuit</b>, 3 films seront diffusés. 
+                                <br>Pour l'occasion, une scène temporaire sera installée et des fauteuils mis en place au <b>parc Monceau</b> à Paris.
+                                <br>L'objectif est de faire découvrir au plus grand nombre un autre type de cinéma : <b>le cinéma d'auteur.</b>
+                           </p> 
+                            <p class="pPresentation">
+                                Les projections seront <b>gratuites</b> et <b>ouvertes à tous !</b>
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu desktop -->
+                <div class="col-lg-2 d-inline-flex  ">
+                    <nav class="navbar navbar-light navigation" id="mainNav">
+                        <ul class="menu navbar-nav   ">
+                            <li class="nav-item ">
+                              <a class="nav-link " href="#presentation">Présentation </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#actualites">Actualités</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#programmation">Programmation</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#preinscription">Préinscriptions</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#infopratiques">Informations pratiques</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Actualités -->
+            <div class="row">
+                <div class="col-lg-10 page-section " id="actualites">
+                    <div class="row justify-content-center">
+                    <h1 class="titre1 col-lg-10 offset-lg-2">Actualités</h1>
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <a href="titre-actualite">
+                                <div class="overlay-image ">
+                                    <img class="iActualites overlay-image " src="Ressources/actualite1.png" alt="">
+                                    <h4 class="date d-flex justify-content-end">24 mars 2019</h4>
+                                    <div class="bandeauActualite d-flex justify-content-center">La programmation est disponible</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="titre-actualite">
+                                <div class="overlay-image ">
+                                    <img class="iActualites overlay-image " src="Ressources/actualite3.png" alt="">
+                                    <h4 class="date d-flex justify-content-end">24 mars 2019</h4>
+                                    <div class="bandeauActualite d-flex justify-content-center">Découvrez les dates et le lieu</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <a href="titre-actualite">
+                                <div class="overlay-image ">
+                                    <img class="iActualites overlay-image " src="Ressources/actualite2.png" alt="">
+                                    <h4 class="date d-flex justify-content-end">24 mars 2019</h4>
+                                    <div class="bandeauActualite d-flex justify-content-center">Autorisation obtenue !</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="titre-actualite">
+                                <div class="overlay-image ">
+                                    <img class="iActualites overlay-image " src="Ressources/logo-actualite.png" alt="">
+                                    <h4 class="date d-flex justify-content-end">24 mars 2019</h4>
+                                    <div class="bandeauActualite d-flex justify-content-center">Annonce de la première édition</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- Programmation -->
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-sm-12 page-section" id="programmation">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="titre1 col-lg-10 offset-lg-2">Programmation</h1>
+                            <h3 class="titre3">Lundi 5 août</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFBusan.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Dernier train pour Busan</span>
+                                <span class="heure-film">18:00</span>
+                            </div>
+                            <div class="auteur-film">Yeon Sang-Ho</div>
+                            <div class="row">
+                                <p class="resume-film"> Un virus inconnu se répand en Corée du Sud, l'état d'urgence est décrété. Les passagers du train KTX se livrent à une lutte sans merci afin de survivre jusqu'à Busan, l'unique ville où ils seront en sécurité... </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFTimeOut.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Time out</span>
+                                <span class="heure-film">20:00</span>
+                            </div>
+                            <div class="auteur-film">Andrew Niccol</div>
+                            <div class="row">
+                                <p class="resume-film">Bienvenue dans un monde où le temps a remplacé l'argent. Génétiquement modifiés, les hommes ne vieillissent plus après 25 ans. Mais à partir de cet âge, il faut "gagner" du temps pour rester en vie. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFBAG.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Bienvenue à Gattaca</span>
+                                <span class="heure-film">22:00</span>
+                            </div>
+                            <div class="auteur-film">Andrew Niccol</div>
+                            <div class="row">
+                                <p class="resume-film">Dans un monde parfait, Gattaca est un centre de recherches spatiales pour des jeunes gens au patrimoine génétique impeccable. Jérôme, candidat idéal, voit sa vie détruite par un accident tandis que Vincent, enfant naturel, rêve de partir pour l'espace. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <h3 class="titre3">Mardi 6 août</h3>
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFSI.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Shutter Island</span>
+                                <span class="heure-film">18:00</span>
+                            </div>
+                            <div class="auteur-film">Martin Scorsese</div>
+                            <div class="row">
+                                <p class="resume-film">Sur l'île, personne n'est à l'abro de la folie. Adapté du polar éponyme de Dennis Lehanne, Shutter Island met en scène le labyrinthe dans lequel est plongé Teddy Daniels, chargé d'enquêter sur la disparition d'une patiente dans un asile. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFGT.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Grand Torino</span>
+                                <span class="heure-film">20:00</span>
+                            </div>
+                            <div class="auteur-film">Clint Eastwood</div>
+                            <div class="row">
+                                <p class="resume-film">Walt Kowalski est un ancien de la guerre de Corée. Après des années de travail à la chaîne, il vit replié sur lui-même. Lorsque le jeune et timide Thao tente de la lui voler sous la pression d'un gang, Walt fait face à la bande, et devient malgré lui le héros du quartier.  </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFMP.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Monty Python, sacré Graal</span>
+                                <span class="heure-film">22:00</span>
+                            </div>
+                            <div class="auteur-film">Terry Jones, Terry Gilliam</div>
+                            <div class="row">
+                                <p class="resume-film">Le roi Arthur et les chevaliers de la Table ronde se lancent dans la quête du très convoité Graal. Sur le chemin de cette aventure décalée, ils chevauchent des chevaux invisibles bruités par des noix de coco, un chevalier à trois têtes et pire, un lapin tueur. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <h3 class="titre3">Mercredi 7 août</h3>
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                           <a href="titre-film.html"> <img class="affiche-film" src="Ressources/AFLH.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">La haine</span>
+                                <span class="heure-film">18:00</span>
+                            </div>
+                            <div class="auteur-film">Mathieu Kassovitz</div>
+                            <div class="row">
+                                <p class="resume-film">Inspiré d'une véritable bavure policière, La Haine raconte la journée d'une bande de jeunes de banlieue qui errent après l'agression de leur copain par un policier. En noir et blanc, Kassovitz dresse un portrait violent et enragé d'une banlieue délaissée.  </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFEMA.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Edward aux mains d'argent</span>
+                                <span class="heure-film">20:00</span>
+                            </div>
+                            <div class="auteur-film">Tim Burton</div>
+                            <div class="row">
+                                <p class="resume-film">Tim Burton réalise un conte magique sur l'histoire d'Edward, un homme qui hérite de ciseaux à la place des mains. Recueilli par une famille, il va se heurter à la cruauté mais aussi découvrir l'amour. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFBS.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Black Swan</span>
+                                <span class="heure-film">22:00</span>
+                            </div>
+                            <div class="auteur-film">Darren Aronofsky</div>
+                            <div class="row">
+                                <p class="resume-film">Le réalisateur de Requiem for a Dream adapte le lac des cygnes en drame psychologique tout aussi dérangeant que fascinant. Entre des séquences de mystère horrifique et de beauté des chorégraphies, on suit l'histoire de Nina qui obtient le rôle principal du célèbre ballet.  </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <h3 class="titre3">Jeudi 8 août</h3>
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFMDB.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Million Dollar Baby</span>
+                                <span class="heure-film">18:00</span>
+                            </div>
+                            <div class="auteur-film">Clint Eastwood</div>
+                            <div class="row">
+                                <p class="resume-film">Ce drame poignant et bouleversant raconte comment Maggie, aidé par Frankie, va se battre pour devenir championne de boxe. Le film nous plonge dans une ambiance sombre, dans des lumières en clair obscur et raconte avec force et violence ces destins. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFLP.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Le Parrain</span>
+                                <span class="heure-film">20:00</span>
+                            </div>
+                            <div class="auteur-film">Francis Ford Coppola</div>
+                            <div class="row">
+                                <p class="resume-film">Premier opus de la trilogie devenue culte, Le Parrain nous plonge au coeur de la mafia new-yorkaise, dans le quotidien d'une riche famille qui règne sur les trafics dans la rue. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <a href="titre-film.html"><img class="affiche-film" src="Ressources/AFS.jpg" alt="Affiche du film"></a>
+                            <div class="d-flex justify-content-between">
+                                <span class="titre-film">Shining</span>
+                                <span class="heure-film">22:00</span>
+                            </div>
+                            <div class="auteur-film">Stanley Kubrick</div>
+                            <div class="row">
+                                <p class="resume-film">Jack Torrance, gardien d'un hôtel fermé l'hiver, sa femme et son fils Danny s'apprêtent à vivre de longs mois de solitude. Danny, qui possède un don de médium, le Shining, est effrayé à l'idée d'habiter ce lieu, théâtre marqué par de terribles évènements passés. </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a href="titre-film.html"> 
+                                    <button type="button" class="btn btn-outline-dark button-link-fiche-film">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Préinscriptions -->
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-sm-12 page-section" id="preinscription">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 ">
+                            <h1 class="titre1 col-lg-10 offset-lg-2">Préinscriptions</h1>
+                            <p class="resume-film">Vous préinscrire vous permet d'être prioritaire dans l'éventualité où le nombre de personnes présentes serait supérieur au nombre de places assises, cela nous permet également de mieux estimer le nombre de personnes attendues afin de mieux satisfaire nos visiteurs.<br>
+                                Le traitement de vos données personnelles est sécurisé, elles ne seront pas revendues et vous ne recevrez aucune publicité.
+                                <br><br>
+                                Pour vous préinscrire, renseignez vos nom(s), prénom(s) et adresse e-mail, séléctionnez le(s) film(s) de votre choix et cliquez sur "Valider".
+                            </p>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <h3 class="titre3">Lundi 5 août</h3>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img class="affiche-film" src="Ressources/AFBusan.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Dernier train pour Busan</span>
+                                    <span class="heure-film">18:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Andrew Niccol</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-1" id="film-1" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFTimeOut.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Time out</span>
+                                    <span class="heure-film">20:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Andrew Niccol</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-2" id="film-2" value="2" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFBAG.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Bienvenue à Gattaca</span>
+                                    <span class="heure-film">22:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Andrew Niccol</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-3" id="film-3" value="3" >
+                                </div>
+                            </div>
+                            <h3 class="titre3">Mardi 6 août</h3>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img class="affiche-film" src="Ressources/AFSI.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Shutter Island</span>
+                                    <span class="heure-film">18:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Martin Scorsese</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-4" id="film-4" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFGT.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Grand Torino</span>
+                                    <span class="heure-film">20:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Clint Eastwood</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-5" id="film-5" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFMP.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Monty Python, sacré Graal</span>
+                                    <span class="heure-film">22:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Terry Jones, Terry Gilliam</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-6" id="film-6" value="1" >
+                                </div>
+                            </div>
+                            <h3 class="titre3">Mercredi 7 août</h3>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img class="affiche-film" src="Ressources/AFLH.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">La haine</span>
+                                    <span class="heure-film">18:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Mathieu Kassovitz</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-4" id="film-4" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFEMA.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Edward aux mains d'argent</span>
+                                    <span class="heure-film">20:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Tim Burton</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-5" id="film-5" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFBS.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Black Swan</span>
+                                    <span class="heure-film">22:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Darren Aronofsky</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-6" id="film-6" value="1" >
+                                </div>
+                            </div>
+                            <h3 class="titre3">Jeudi 8 août</h3>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img class="affiche-film" src="Ressources/AFMDB.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Million Dollar Baby</span>
+                                    <span class="heure-film">18:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Clint Eastwood</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-4" id="film-4" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFLP.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Le Parrain</span>
+                                    <span class="heure-film">20:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Francis Ford Coppola</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-5" id="film-5" value="1" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 ">
+                                <img class="affiche-film" src="Ressources/AFS.jpg" alt="Affiche du film">
+                                <div class="d-flex justify-content-between">
+                                    <span class="titre-film">Shining</span>
+                                    <span class="heure-film">22:00</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="auteur-film">Stanley Kubrick</span>
+                                    <button type="button" class="btn btn-outline-dark bt-lk-fiche-film-preinscription">
+                                    <i class="far fa-file-video"></i>
+                                    Voir la fiche du film</button>
+                                </div>
+                                <div class="form-check radio-input">
+                                    <input class="form-check-input" type="radio" name="film-6" id="film-6" value="1" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-fields">     
+                            <div class="col-lg-6 offset-lg-4  col-md-8 offset-md-2 col-sm-12">
+                                <div class="form-group">
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" class="form-control" id="nom-contact" placeholder="Nom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prenom">Prénom :</label>
+                                    <input type="text" class="form-control" placeholder="Prénom" id="prenom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Adresse e-mail :</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Adresse e-mail">
+                                    <small id="emailHelp" class="form-text text-muted">Vous ne recevrez aucune offre publicitaire.</small>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- info pratiques -->
+            <div class="row">
+                <div class="col-lg-10 page-section" id="infopratiques">
+                    <div class="row justify-content-center">
+                        <h1 class="titre1 col-lg-10 offset-lg-2">Informations pratiques</h1>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h3 class="titre3">A prévoir</h3>
+                            <p class="resume-film">Les séances commencent à l'heure indiquée, pour ne pas perdre une miette du spectacle nous vous invitons à venir 15 minutes en avance pour que tout le monde puisse s'installer confortablement.
+                                <br>
+                                Des sièges sont prévus, mais en fonction de l'heure et de la météo, pensez à prévoir vestes et couvertures.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h3 class="titre3">Restauration</h3>
+                            <p class="resume-film">
+                                Pour agrémenter votre séance ou tout simplement en cas de fringale, des distributeurs de confiseries et des foodtrucks se trouvent tout autour du parc.
+                                <br>
+                                Vous pouvez bien entendu amener vos propres friandises.
+                                <br>
+                                Conformément au réglement du parc, la consommation d'alcool est interdite.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h3 class="titre3">Localisation</h3>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 map-marker-div">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12">
+                                    <p>
+                                        Parc Monceau<br>
+                                        35 Boulevard de Courcelles,<br>
+                                        75008 Paris
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div id="map" class="map"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h3 class="titre3">Venir au parc Monceau</h3>
+                            <h6>En métro :</h6>    
+                            <span class="resume-film">Ligne 2, arrêt Monceau</span><br><br>
+                            <h6>En bus :</h6>    
+                            <span class="resume-film">Ligne 30, arrêt Monceau</span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12 page-section" id="contact">
+                    <h1 class="titre1"> Contact</h1>
+                    <p class="resume-film">
+                        Vous avez une question ? Vous souhaitez nous contacter ? Vous pouvez utiliser le formulaire ci-dessous.
+                    </p>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" class="form-control" placeholder="Votre nom" id="nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail :</label>
+                            <input type="email" class="form-control" placeholder="Votre adresse e-mail" id="mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea id="message" class="md-textarea form-control" rows="5"  placeholder="Votre message"></textarea>
+                        </div>
+                        <div class="center">
+                            <input class="btn btn-primary" type="button" value="Envoyer">
+                        </div>
+                        
+                    </form>
+                    &nbsp;<br>&nbsp;<br>&nbsp;<br>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+            <!-- Initialisation map  -->
+             <script>
+                  var map = new ol.Map({
+                    target: 'map',
+                    layers: [
+                      new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                      })
+                    ],
+                    view: new ol.View({
+                      center: ol.proj.fromLonLat([2.30860,  48.87938]),
+                      zoom: 17
+                    })
+                  });
+            </script>
+            <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+            <script src="main.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </footer>   
+    </body> 
+</html>
+

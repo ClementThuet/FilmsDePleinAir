@@ -1,0 +1,273 @@
+/* Général */
+body{
+    color:black;
+}
+a{
+    color:black;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff6c42;
+}
+.center{
+    text-align:center;
+}
+.row{
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+.logo{
+    height:20vh;
+    max-width:100%;
+    margin-top:5vh;
+}
+.titre1{
+        width:100%;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top:2vh;
+        margin-bottom:3vh;
+        color: #ff6c42;
+    }
+.titre3{
+     width:100%; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        margin-top:2vh;
+        margin-bottom:2vh;
+}
+.nav-link{
+    color:black !important;
+}   
+.iActualites{
+    width:100%;
+    
+}
+.overlay-image{
+    box-shadow: 1px 1px 2px 0px #000000;
+}
+.overlay-image .date {
+    font-size: 1em;
+    color:black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-20%, 10%);
+}
+.active {
+    color: #ff6c42 !important;
+    font-size:1.3em;
+    font-weight:bold;
+        
+}
+.bandeauActualite{
+    width:calc(100% - 30px);
+    margin-left:15px;
+    background-color:black;
+    text-align: center;
+    color:white;
+    opacity:0.8;
+}
+.overlay-image .bandeauActualite {
+    font-size: 1em;
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+.affiche-film{
+    width:100%;
+}
+.affiche-fiche-film-container{
+    height:60vh;
+}
+.affiche-fiche-film{
+    height:100%;
+}
+.titre-film{
+    margin-top:1vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.1em;
+}
+.titre-fiche-film{
+    margin-top:1vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.8em;
+}
+.heure-film{
+    margin-top:1vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff6c42 !important;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+.auteur-film{
+    font-family: 'Montserrat', sans-serif;
+}
+.infos-film{
+    margin-top:1vh;
+    margin-bottom:1vh;
+    font-size:1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.resume-film{
+    color:#393c3c;
+}
+.radio-input{
+    text-align: center;
+    height:3vh;
+}
+input[type=radio] {
+     transform:scale(1.5);
+}
+.form-fields{
+    margin-top:4vh;
+}
+.fa-map-marker-alt{
+    transform:scale(2.5); 
+    margin-top:3vh;
+}
+.fa-play-circle{
+    
+    margin-right:6px;
+}
+.buttons-fiche-film{
+    font-size:1.4rem;
+    margin-right:10px;
+}
+.bt-lk-fiche-film-preinscription{
+    font-size:0.9rem;
+    margin-bottom: 10px;
+}
+
+.map{
+    margin-bottom: 3vh;
+}
+.container-menu-mobile{
+    margin-top:2vh;
+    position: sticky;
+    top: 0px;
+    z-index:2;
+    background-color:white;
+}
+.hamburger-menu-detail{
+    display:inline;
+    text-align: right;
+    box-shadow: 0 4px 2px -2px gray;
+    width:100%;
+}
+.arrow-back{
+    margin-top:3vh;
+    transform:scale(1.7); 
+    color:black;
+}
+.author-actualite{
+    margin-left:6px;
+    font-size: 1.1rem;
+    color: #ff6c42;
+}
+.icone-date-actualite{
+    font-size:1.2rem;
+    margin-bottom:1vh;
+}
+.date-actualite{
+    color: #ff6c42;
+}
+.button-link-fiche-film{
+    margin-top:-10px;
+    margin-bottom:8px;
+}
+/* Small display */
+@media screen and (max-width: 767px){
+    .banner{
+        display:none;
+    }
+    .hamburgerMenu{
+        display:inline;
+        font-size:0.7rem;
+        text-align: right;
+        box-shadow: 0 4px 2px -2px gray;
+        width:100%;
+        
+    }
+    .nav-horizontal{
+        padding-right:10px;
+        font-size: 1.2em;
+    }
+    .menu{
+        display:none;
+    }
+    .iActualites{
+        margin-bottom:10px;
+    }
+    
+    .pPresentation{
+        font-family: 'Montserrat', sans-serif;
+        font-size:0.9rem;
+        color: #393c3c;
+        margin-top:2vh;
+    }
+    .affiche-film{
+        margin-top:2vh;
+    }
+    .map-marker-div{
+        display: none;
+    }
+}
+/* medium display */
+@media screen and (max-width:991px) and (min-width: 768px){
+    .banner{
+        display:none;
+    }
+    .menu{
+        position:fixed;
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.3em;
+        display:none;
+    }
+   .hamburgerMenu{
+        display:inline;
+        text-align: right;
+        box-shadow: 0 4px 2px -2px gray;
+        width:100%;
+    }
+    .nav-horizontal{
+        padding-right:10px;
+        font-size: 1.3em;
+    }
+    .pPresentation{
+        font-family: 'Montserrat', sans-serif;
+        font-size:1em;
+        color:#393c3c;
+        margin-top:2vh;
+    }
+}   
+/* Large display */
+@media screen and (min-width: 992px){
+    .logo{
+        margin-bottom: 5vh;
+       
+    }
+    .bg-logo{
+         box-shadow:0px 1px 0px 0px black;
+         margin-bottom:2vh;
+    }
+    .menu{
+        position:fixed;
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.3em;
+    }
+    .hamburgerMenu{
+        display:none;
+    }
+    .nav-link{
+        text-align: center;
+    }
+    .pPresentation{
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.1rem;
+        color:#393c3c;
+    }
+}   
